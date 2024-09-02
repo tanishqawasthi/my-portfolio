@@ -69,7 +69,7 @@ export default function Socials() {
     },
   ];
   return (
-    (<div className="flex items-center justify-center h-[35rem] w-full">
+    (<div className="flex items-center justify-center h-[6rem] w-full">
       <FloatingDock
         // only for demo, remove for production
         mobileClassName="translate-y-20"
