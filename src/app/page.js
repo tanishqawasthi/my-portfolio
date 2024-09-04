@@ -4,6 +4,7 @@ import Socials from "@/components/elements/Socials";
 import TechStack from "@/components/elements/TechStack";
 import About from "@/components/elements/About";
 import Hero from "@/components/elements/Hero";
+import ContactMe from "@/components/elements/ContactMe";
 
 
 
@@ -15,6 +16,7 @@ export default function Home() {
       <Navbar />
       <TechStack />
       <ExpTimeline />
+      <ContactMe />
       <Socials/>
     </div>
   );

@@ -9,7 +9,8 @@ import { BiLogoPostgresql } from "react-icons/bi";
 
 export default function TechStack() {
   return (
-    (<div className="max-w-5xl mx-auto px-8">
+    (<div className="max-w-5xl mx-auto px-8 mt-8">
+      <h2 className="flex justify-center text-4xl font-bold">MY TECH STACK</h2>
       <HoverEffect items={projects} />
     </div>)
   );
