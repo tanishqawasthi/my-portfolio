@@ -18,11 +18,12 @@ export default function About() {
           duration: 0.5,
           ease: [0.4, 0.0, 0.2, 1],
         }}
-        className="text-2xl px-4 md:text-4xl lg:text-5xl font-bold text-neutral-700 dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto ">
-        This will be{" "}
+        className="text-sm px-4 md:text-base lg:text-2xl text-neutral-700 dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto ">
+        I’m a Software Developer from India with a solid foundation in Full-Stack Development and a continuous drive to learn. I completed my B.Tech from IIIT Sri City in Computer Science & Engineering. My experience spans various disciplines, including front-end, back-end, web scraping, and prompt engineering. {" "}
         <Highlight className="text-black dark:text-white">
-          ABOUT ME SECTION
+        front-end, back-end, web scraping, and prompt engineering.
         </Highlight>
+        I also led the GDSC Design Team during my time in college. As I’ve recently entered the software development market, I’m eager to collaborate with like-minded individuals to deliver impactful solutions that help others and contribute to my growth.
       </motion.h1>
     </HeroHighlight>)
   );
