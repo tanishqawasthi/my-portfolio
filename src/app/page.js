@@ -5,8 +5,7 @@ import TechStack from "@/components/elements/TechStack";
 import About from "@/components/elements/About";
 import Hero from "@/components/elements/Hero";
 import ContactMe from "@/components/elements/ContactMe";
-
-
+import Projects from "@/components/elements/Projects";
 
 export default function Home() {
   return (
@@ -16,6 +15,7 @@ export default function Home() {
       <Navbar />
       <TechStack />
       <ExpTimeline />
+      <Projects />
       <ContactMe />
       <Socials/>
     </div>
