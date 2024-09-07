@@ -20,8 +20,16 @@ function Nav({
       className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50", className)}>
       <Menu setActive={setActive}>
         <MenuItem setActive={setActive} active={active} item="About Me">
+          <ProductItem
+              href=""
+              src="/about.png"
+            />
         </MenuItem>
         <MenuItem setActive={setActive} active={active} item="Experiences">
+          <ProductItem
+              href=""
+              src="/exp.png"
+            />
         </MenuItem>
         <MenuItem setActive={setActive} active={active} item="Projects">
         </MenuItem>
