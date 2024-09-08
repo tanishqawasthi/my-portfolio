@@ -20,16 +20,16 @@ export default function Hero() {
             className="relative bg-clip-text text-transparent bg-no-repeat bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500 py-4 ">
             <span className="">Full Stack Web Developer</span>
           </div>
-          <div className="w-[50rem] h-5 relative ">
+          <div className="w-[50rem] h-5 relative mx-auto">
             {/* Gradients */}
             <div
-            className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
+            className="absolute inset-x-24 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
             <div
-            className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4" />
+            className="absolute inset-x-24 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4" />
             <div
-              className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[5px] w-1/4 blur-sm" />
+              className="absolute inset-x-80 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[5px] w-1/4 blur-sm" />
             <div
-              className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-1/4 " />
+              className="absolute inset-x-80 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-1/4" />
           </div>
           <div className="flex justify-center font-thin text-lg">
             <ResumeButton/>

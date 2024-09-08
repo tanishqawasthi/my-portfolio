@@ -19,7 +19,7 @@ export default function About() {
           ease: [0.4, 0.0, 0.2, 1],
         }}
         className="text-sm px-4 md:text-base lg:text-2xl text-neutral-700 dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto ">
-        I’m a Software Developer from India with a solid foundation in Full-Stack Development and a continuous drive to learn. I completed my B.Tech from IIIT Sri City in Computer Science & Engineering. My experience spans various disciplines, including front-end, back-end, web scraping, and prompt engineering. {" "}
+        I’m a Software Developer from India with a solid foundation in Full-Stack Development and a continuous drive to learn. I completed my B.Tech from IIIT Sri City in Computer Science & Engineering. My experience spans various disciplines, including {" "}
         <Highlight className="text-black dark:text-white">
         front-end, back-end, web scraping, and prompt engineering.
         </Highlight>

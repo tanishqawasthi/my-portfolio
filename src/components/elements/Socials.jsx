@@ -12,40 +12,40 @@ import {
 export default function Socials() {
   const links = [
     {
-      title: "Home",
+      title: "Email",
       icon: (
         <IconMail className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "mailto:awasthitanishq03@gmail.com",
     },
 
     {
-      title: "Products",
+      title: "Linkedin",
       icon: (
         <IconBrandLinkedin className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "https://www.linkedin.com/in/tanishq-awasthi/",
     },
     {
       title: "GitHub",
       icon: (
         <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "https://github.com/tanishqawasthi",
     },
     {
       title: "Twitter",
       icon: (
         <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "https://twitter.com/TanishqAwasthi4",
     },
     {
       title: "Instagram",
       icon: (
         <IconBrandInstagram className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "https://www.instagram.com/tanishqawasthi03/",
     },
   ];
   return (

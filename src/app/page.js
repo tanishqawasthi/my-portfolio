@@ -7,16 +7,17 @@ import Hero from "@/components/elements/Hero";
 import ContactMe from "@/components/elements/ContactMe";
 import Projects from "@/components/elements/Projects";
 
+
 export default function Home() {
   return (
     <div className="">
       <Hero />
-      <About />
+      <About id="about"/>
       <Navbar />
       <TechStack />
-      <ExpTimeline />
-      <Projects />
-      <ContactMe />
+      <ExpTimeline id="experience" />
+      <Projects id="projects" />
+      <ContactMe id="contact" />
       <Socials/>
     </div>
   );

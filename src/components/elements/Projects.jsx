@@ -54,14 +54,16 @@ function ThreeDCardDemo({item}) {
           {content}
         </CardItem>
         <div className="flex justify-between items-center mt-8">
-          <CardItem
-            translateZ={20}
-            as={Link}
-            href={link}
-            target="__blank"
-            className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold">
-            <FaExternalLinkAlt />
-          </CardItem>
+        {link && (
+  <CardItem
+    translateZ={20}
+    as={Link}
+    href={link}
+    target="__blank"
+    className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold">
+    <FaExternalLinkAlt />
+  </CardItem>
+)}
           <CardItem
             translateZ={20}
             as="button"
@@ -79,24 +81,30 @@ const data = [
     name: 'PetSanctum',
     description: 'A pet Adoption Website',
     image: '/PetSanctum.png',
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero sapiente consequatur perferendis voluptatibus ex cum, vitae facere sit nesciunt rem!",
-    link: '',
-    github: ''
+    content: "A free-commerce platform for pet adoption, rescue, and donation, facilitating a seamless user experience for pet lovers and organizations.",
+    link: 'https://stellular-lamington-287e44.netlify.app/',
+    github: 'https://github.com/TejasParse/pet-sanctum-react'
   },
   {
     name: 'InterviewAI',
     description: 'AI Based Mock Interview Platform',
-    image: '/PetSanctum.png',
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero sapiente consequatur perferendis voluptatibus ex cum, vitae facere sit nesciunt rem!",
-    link: '',
-    github: ''
+    image: '/interview.png',
+    content: "A platform where users input job descriptions and generate tailored interview questions, record video responses, and evaluate answers using AI.",
+    github: 'https://github.com/tanishqawasthi/ai-mock-interview'
   },
   {
     name: 'SketchBook',
     description: 'A collaborative sketchbook',
     image: '/sketchbook.png',
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero sapiente consequatur perferendis voluptatibus ex cum, vitae facere sit nesciunt rem!",
-    link: '',
-    github: ''
+    content: "A drawing application enabling users to collaboratively create and share sketches in real time on HTML5 Canvas using Socket.io.",
+    github: 'https://github.com/tanishqawasthi/sketchbook-client',
+    link: 'https://sketchbook-client.vercel.app/'
+  },
+  {
+    name: 'Imagify',
+    description: 'Generate Images from Text Prompts',
+    image: '/imagify.png',
+    content: "A website for generating high-quality images from text prompts, accompanied by an engaging community section that empowers users to share their creative outputs.",
+    github: 'https://github.com/tanishqawasthi/imagify'
   },
 ]

@@ -5,7 +5,7 @@ import { Timeline } from "@/components/ui/timeline";
 export default function ExpTimeline() {
   const data = [
     {
-      title: "July 2024",
+      title: "July 2024 - Present",
       content: (
         <div>
             <h3 className="text-2xl font-bold">Brane Enterprises - Associate Solutions Leader (SDE 1)</h3>
