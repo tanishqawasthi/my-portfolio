@@ -17,7 +17,7 @@ function Nav({
   const [active, setActive] = useState(null);
   return (
     (<div
-      className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50", className)}>
+      className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50 text-xs md:text-sm", className)}>
       <Menu setActive={setActive}>
         <MenuItem setActive={setActive} active={active} item="About Me">
           <ProductItem

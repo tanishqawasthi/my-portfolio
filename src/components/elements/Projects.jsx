@@ -11,7 +11,7 @@ export default function Projects() {
   return(
     <div className="mx-16 mt-8">
       <h2 className="flex justify-center text-4xl font-bold">My Projects</h2>
-    <div className="grid grid-cols-2">
+    <div className="md:grid md:grid-cols-2">
       {data.map((item, index) => {
         return(
           <ThreeDCardDemo key={index} item={item} />
