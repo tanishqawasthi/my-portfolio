@@ -23,17 +23,29 @@ function Nav({
           <ProductItem
               href=""
               src="/about.png"
+              alt="about"
             />
         </MenuItem>
         <MenuItem setActive={setActive} active={active} item="Experiences">
           <ProductItem
               href=""
               src="/exp.png"
+              alt="experiences"
             />
         </MenuItem>
         <MenuItem setActive={setActive} active={active} item="Projects">
+        <ProductItem
+              href=""
+              src="/projects.png"
+              alt="projects"
+            />
         </MenuItem>
         <MenuItem setActive={setActive} active={active} item="Connect">
+        <ProductItem
+              href=""
+              src="/contact.png"
+              alt="contact"
+            />
         </MenuItem>
       </Menu>
     </div>)
