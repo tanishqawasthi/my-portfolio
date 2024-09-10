@@ -33,7 +33,7 @@ export default function ContactMe() {
         },
       );
 
-    toast("Thanks! I'll reach out to you soon.", {
+    toast("Thanks! I&#39;ll reach out to you soon.", {
       position: "top-right",
       autoClose: 5000,
       hideProgressBar: false,
