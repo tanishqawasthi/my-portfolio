@@ -1,7 +1,6 @@
 'use client'
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
-import Link from "next/link";
 import { useState } from "react";
 
 export const HoverEffect = ({
@@ -12,9 +11,9 @@ export const HoverEffect = ({
 
   return (
     (<div
-      className={cn("grid grid-cols-3 md:grid-cols-5  lg:grid-cols-6  py-10", className)}>
+      className={cn("grid grid-cols-3 md:grid-cols-5  lg:grid-cols-6  py-10 cursor-pointer", className)}>
       {items.map((item, idx) => (
-        <Link
+        <div
           href="#"
           key={idx}
           className="relative group  block p-2 h-full w-full"
@@ -40,7 +39,7 @@ export const HoverEffect = ({
             <CardDescription>{item.icon}</CardDescription>
             <CardTitle>{item.title}</CardTitle>
           </Card>
-        </Link>
+        </div>
       ))}
     </div>)
   );

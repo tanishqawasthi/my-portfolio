@@ -9,7 +9,7 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 
 export default function Projects() {
   return(
-    <div className="mx-16 mt-8">
+    <div className=" mx-8 md:mx-16 mt-8">
       <h2 className="flex justify-center text-4xl font-bold">My Projects</h2>
     <div className="lg:grid lg:grid-cols-2">
       {data.map((item, index) => {
@@ -66,7 +66,9 @@ function ThreeDCardDemo({item}) {
 )}
           <CardItem
             translateZ={20}
-            as="button"
+            as={Link}
+            href={github}
+            target="__blank"
             className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold">
             <FaGithub/>
           </CardItem>
