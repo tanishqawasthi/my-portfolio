@@ -1,13 +1,49 @@
 "use client";
-import React from "react";
+import React, {useState} from "react";
 import { Label } from "../ui/label";
 import { Input } from "../ui/input";
 import { cn } from "@/lib/utils";
+import { ToastContainer, toast, Bounce } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import emailjs from '@emailjs/browser';
 
 export default function ContactMe() {
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('')
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Form submitted");
+    const templateParams = {
+      user_name: name,
+      user_email: email,
+      message: message
+    }
+    console.log(templateParams)
+    emailjs
+      .send(process.env.NEXT_PUBLIC_EMAIL_JS_SERVICE, process.env.NEXT_PUBLIC_EMAIL_JS_TEMPLATE, templateParams,process.env.NEXT_PUBLIC_EMAIL_JS_PUBLIC_KEY)
+      .then(
+        () => {
+          console.log('SUCCESS!');
+          setName('')
+          setEmail('')
+          setMessage('')
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+
+    toast("Thanks! I'll reach out to you soon.", {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      transition: Bounce,
+      });
   };
   return (
     (<div
@@ -21,15 +57,15 @@ export default function ContactMe() {
       <form className="my-8" onSubmit={handleSubmit}>
           <LabelInputContainer className="mb-4">
             <Label htmlFor="name">Name</Label>
-            <Input id="name" placeholder="Your Name Here" type="text" />
+            <Input id="name" placeholder="Your Name Here" type="text" name="user_name" value={name} onChange={(e)=> setName(e.target.value)} />
           </LabelInputContainer>
         <LabelInputContainer className="mb-4">
           <Label htmlFor="email">Email Address</Label>
-          <Input id="email" placeholder="Your Email Here" type="email" />
+          <Input id="email" placeholder="Your Email Here" type="email" name="user_email" value={email} onChange={(e)=> setEmail(e.target.value)}/>
         </LabelInputContainer>
         <LabelInputContainer className="mb-4">
           <Label htmlFor="message">Message</Label>
-          <Input id="message" placeholder="Your Message Here" type="text" className="h-32" as="textarea"/>
+          <Input id="message" placeholder="Your Message Here" type="text" className="h-32" as="textarea" name="message" value={message} onChange={(e)=> setMessage(e.target.value)}/>
         </LabelInputContainer>
 
         <button
@@ -42,6 +78,7 @@ export default function ContactMe() {
         <div
           className="bg-gradient-to-r from-transparent via-neutral-300 dark:via-neutral-700 to-transparent my-8 h-[1px] w-full" />
       </form>
+      <ToastContainer />
     </div>)
   );
 }
