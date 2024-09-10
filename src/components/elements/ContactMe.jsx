@@ -3,11 +3,6 @@ import React from "react";
 import { Label } from "../ui/label";
 import { Input } from "../ui/input";
 import { cn } from "@/lib/utils";
-import {
-  IconBrandGithub,
-  IconBrandGoogle,
-  IconBrandOnlyfans,
-} from "@tabler/icons-react";
 
 export default function ContactMe() {
   const handleSubmit = (e) => {
@@ -26,11 +21,11 @@ export default function ContactMe() {
       <form className="my-8" onSubmit={handleSubmit}>
           <LabelInputContainer className="mb-4">
             <Label htmlFor="name">Name</Label>
-            <Input id="name" placeholder="Parth" type="text" />
+            <Input id="name" placeholder="Your Name Here" type="text" />
           </LabelInputContainer>
         <LabelInputContainer className="mb-4">
           <Label htmlFor="email">Email Address</Label>
-          <Input id="email" placeholder="parth@gmail.com" type="email" />
+          <Input id="email" placeholder="Your Email Here" type="email" />
         </LabelInputContainer>
         <LabelInputContainer className="mb-4">
           <Label htmlFor="message">Message</Label>

@@ -1,3 +1,4 @@
+'use client'
 import React from "react";
 import { FloatingDock } from "@/components/ui/floating-dock";
 import {
@@ -7,16 +8,33 @@ import {
   IconMail,
   IconBrandInstagram
 } from "@tabler/icons-react";
+import { ToastContainer, toast, Bounce } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 export default function Socials() {
+  const notify = (e) => { 
+    e.preventDefault()
+    window.navigator.clipboard.writeText("awasthitanishq03@gmail.com")
+    toast('Email copied to clipboard', {
+    position: "top-right",
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "light",
+    transition: Bounce,
+    });
+  }
   const links = [
     {
       title: "Email",
       icon: (
-        <IconMail className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "mailto:awasthitanishq03@gmail.com",
+        <IconMail className="h-full w-full text-neutral-500 dark:text-neutral-300" onClick={notify} />
+        ),
+      href: "",
     },
 
     {
@@ -54,6 +72,7 @@ export default function Socials() {
         // only for demo, remove for production
         mobileClassName="translate-y-20"
         items={links} />
+        <ToastContainer />
     </div>)
   );
 }
