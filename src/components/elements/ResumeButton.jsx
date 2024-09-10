@@ -12,7 +12,7 @@ export default function ResumeButton() {
         as="button"
         className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2">
       <PiPaperclipLight width={"66"} height={"66"}/>
-        <span>Check out my Resume</span>
+        <span className="tracking-wide">Check out my Resume</span>
       </HoverBorderGradient>
     </div>
     </a>

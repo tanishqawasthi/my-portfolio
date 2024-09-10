@@ -1,4 +1,4 @@
-import Navbar from "@/components/elements/Navbar";
+// import Navbar from "@/components/elements/Navbar";
 import ExpTimeline from "@/components/elements/ExpTimeline";
 import Socials from "@/components/elements/Socials";
 import TechStack from "@/components/elements/TechStack";
@@ -11,9 +11,9 @@ import Projects from "@/components/elements/Projects";
 export default function Home() {
   return (
     <div className="">
+      {/* <Navbar /> */}
       <Hero />
-      <About id="about"/>
-      <Navbar />
+      <About />
       <TechStack />
       <ExpTimeline id="experience" />
       <Projects id="projects" />

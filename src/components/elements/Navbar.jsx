@@ -1,4 +1,3 @@
-"use client";
 import React, { useState } from "react";
 import { HoveredLink, Menu, MenuItem, ProductItem } from "../ui/navbar-menu";
 import { cn } from "@/lib/utils";
@@ -15,6 +14,7 @@ function Nav({
   className
 }) {
   const [active, setActive] = useState(null);
+
   return (
     (<div
       className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50 text-xs md:text-sm", className)}>
@@ -23,28 +23,28 @@ function Nav({
           <ProductItem
               href=""
               src="/about.png"
-              alt="about"
+              title="about"
             />
         </MenuItem>
         <MenuItem setActive={setActive} active={active} item="Experiences">
           <ProductItem
               href=""
               src="/exp.png"
-              alt="experiences"
+              title="experiences"
             />
         </MenuItem>
         <MenuItem setActive={setActive} active={active} item="Projects">
         <ProductItem
               href=""
               src="/projects.png"
-              alt="projects"
+              title="projects"
             />
         </MenuItem>
         <MenuItem setActive={setActive} active={active} item="Connect">
         <ProductItem
               href=""
               src="/contact.png"
-              alt="contact"
+              title="contact"
             />
         </MenuItem>
       </Menu>
