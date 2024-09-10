@@ -52,7 +52,7 @@ export default function ContactMe() {
         Get In Touch
       </h2>
       <p className="text-neutral-600 text-sm max-w-sm mt-2 dark:text-neutral-300">
-      Interested in working together or learning more about me? Please fill out the form below, and I'll get back to you as soon as possible!
+      Interested in working together or learning more about me? Please fill out the form below, and I&#39;ll get back to you as soon as possible!
       </p>
       <form className="my-8" onSubmit={handleSubmit}>
           <LabelInputContainer className="mb-4">
